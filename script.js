@@ -194,6 +194,7 @@ function setupEventListeners() {
   if (todayBtn)
     todayBtn.addEventListener("click", () => {
       currentCalendarDate = new Date();
+      updateMonthSelect();
       updateYearSelect();
       renderCalendar();
     });
